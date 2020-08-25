@@ -1,6 +1,6 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
-@Component({})
+@Component()
 export default class InputComponent extends Vue {
     @Prop({type: String || Number})
     value!: '';

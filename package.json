@@ -55,6 +55,8 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "rollup-plugin-typescript2": "^0.27.2",
+    "tslib": "^2.0.1",
     "vue-property-decorator": "^9.0.0"
   }
 }

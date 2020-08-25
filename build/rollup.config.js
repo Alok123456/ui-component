@@ -1,8 +1,9 @@
 import vue from "rollup-plugin-vue";
-import buble from "rollup-plugin-buble";
+// import buble from "rollup-plugin-buble";
 import commonjs from "rollup-plugin-commonjs";
 import replace from "rollup-plugin-replace";
 import uglify from "rollup-plugin-uglify-es";
+import typescript from 'rollup-plugin-typescript2';
 import minimist from "minimist";
 
 const argv = minimist(process.argv.slice(2));
@@ -22,7 +23,8 @@ const config = {
             css: true, // Dynamically inject css as a <style> tag
             compileTemplate: true, // Explicitly convert template to render function
         }),
-        buble(), // Transpile to ES5
+        // buble(), // Transpile to ES5
+        typescript()
     ],
   };
   
