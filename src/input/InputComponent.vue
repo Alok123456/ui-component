@@ -1,33 +1,11 @@
 <template>
-    <div class="">
-    
-        <label>Label</label>
-    
-        <input v-model="inputVal" />
-    
+    <div :class="width">
+        <label>{{label}}</label>
+        <input v-model="inputVal" v-telnumberformat />
+        <span>{{error}}</span>
     </div>
 </template>
 <script lang="ts">
-// import Vue from "vue";
-// export default Vue.extend({
-//     name: 'Input',
-//     props: {
-//         value: {
-//             type: String || Number,
-//             default: null
-//         }
-//     },
-//     computed: {
-//         inputVal: {
-//             get: function() {
-//                 return this.value;
-//             },
-//             set: function(value) {
-//                 this.$emit('input', value);
-//             }
-//         }
-//     }
-// })
 import InputComponent from './InputComponent';
 export default InputComponent;
 </script>
