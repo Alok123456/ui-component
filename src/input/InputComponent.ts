@@ -89,7 +89,10 @@ export default class InputComponent extends Vue {
     @Prop({type: String, default: ''})
     label!: '';
 
-    @Prop({type:String})
+    @Prop({type: String, default: ''})
+    required!: '';
+  
+    @Prop({ type: String })
     inputType!: '';
 
     @Prop()

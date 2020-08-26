@@ -1,8 +1,8 @@
 <template>
-    <div :class="width">
-        <label>{{label}}</label>
+    <div :class="width" class="input-group">
+        <label v-if="label">{{label}}<span class="asterisk" v-if="required">*</span></label>
         <input v-model="inputVal" v-telnumberformat />
-        <span>{{error}}</span>
+        <span class="error-message">{{error}}</span>
     </div>
 </template>
 <script lang="ts">
